@@ -1,4 +1,4 @@
-# Electron Anguular4 Sqlite3
+# Electron Angular4 Sqlite3
 
 This is a sample project to show how to build a desktop app using Electron, Angular 4 and Sqlite3
 
