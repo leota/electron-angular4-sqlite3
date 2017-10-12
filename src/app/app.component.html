@@ -1,9 +1,8 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div *ngIf="list" style="text-align:center">
+<div style="text-align:center">
   <h1>
     List of users
   </h1>
-  <ul>
+  <ul *ngIf="list">
     <li *ngFor="let name of list">{{name}}</li>
   </ul>
 </div>
