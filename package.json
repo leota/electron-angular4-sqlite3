@@ -13,7 +13,9 @@
     "build-electron-win": "ng build --base-href . && copy src\\electron\\* dist",
     "electron": "npm run build-electron && electron dist",
     "electron-win": "npm run build-electron-win && electron dist",
-    "rebuild": "electron-rebuild -f -w sqlite3"
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "db": "cp ./DB/_database.sqlite ./DB/database.sqlite",
+    "db-win": "copy .\\DB\\_database.sqlite .\\DB\\database.sqlite"
   },
   "private": true,
   "dependencies": {
