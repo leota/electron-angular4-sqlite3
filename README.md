@@ -21,7 +21,7 @@ npm run db-win
 ```
 ## Build
 ```
-npm run electron-rebuild
+npm run rebuild
 ```
 
 ## Run
