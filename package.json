@@ -12,7 +12,8 @@
     "build-electron": "ng build --base-href . && cp src/electron/* dist",
     "build-electron-win": "ng build --base-href . && copy src\\electron\\* dist",
     "electron": "npm run build-electron && electron dist",
-    "electron-win": "npm run build-electron-win && electron dist"
+    "electron-win": "npm run build-electron-win && electron dist",
+    "rebuild": "electron-rebuild -f -w sqlite3"
   },
   "private": true,
   "dependencies": {
@@ -27,7 +28,9 @@
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
     "electron": "^1.7.9",
+    "knex": "^0.13.0",
     "rxjs": "^5.4.2",
+    "sqlite3": "^3.1.13",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
@@ -38,6 +41,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.2.0",
+    "electron-rebuild": "^1.6.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
