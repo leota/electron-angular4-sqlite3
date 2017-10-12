@@ -1,2 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'variables';
+@import '../node_modules/font-awesome/scss/font-awesome';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+    margin: 0;
+}
+
+.link {
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        color: white;
+    }
+}
