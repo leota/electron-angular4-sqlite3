@@ -8,6 +8,7 @@ git clone git@github.com:leota/electron-angular4-sqlite3.git
 cd electron-angular4-sqlite3
 npm install
 ```
+
 #### Copy database file
 On Linux/Mac:
 
