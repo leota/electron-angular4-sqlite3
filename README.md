@@ -2,6 +2,12 @@
 
 This is a sample project to show how to build a desktop app using Electron, Angular 4 and Sqlite3
 
+## Info about branches
+#### master
+Show the essential configuration to build a desktop app with Electron, Angular and Sqlite.
+#### community (WIP)
+Will enable user to create communities/organizations, add people to them and manage their data.
+
 ## Setup
 ```
 git clone git@github.com:leota/electron-angular4-sqlite3.git
