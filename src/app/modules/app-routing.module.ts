@@ -9,7 +9,7 @@ const appRoutes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'create-community', component: CreateCommunityComponent },
-    { path: 'community-detail:id', component: CommunityDetailComponent },
+    { path: 'community-detail/:name', component: CommunityDetailComponent },
 ];
 
 @NgModule({

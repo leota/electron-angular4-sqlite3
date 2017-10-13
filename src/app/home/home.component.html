@@ -3,10 +3,12 @@
 </div>
 <div class="list">
   <div class="community" *ngFor="let c of communitiesList">
-    <div class="picture">
+    <div [routerLink]="['/community-detail', c.name]">
+      <div class="picture">
         <i class="fa fa-users fa-4x light-blue" aria-hidden="true"></i>
+      </div>
+      <p class="name light-blue">{{c.name}}</p>
     </div>
-    <p class="name light-blue">{{c.name}}</p>
   </div>
 </div>
 <div class="fixed-bottom-right">
