@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { CreateCommunityComponent } from './create-community/create-community.component';
+import { CommunityDetailComponent } from './community-detail/community-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    CreateCommunityComponent
+    CreateCommunityComponent,
+    CommunityDetailComponent
   ],
   imports: [
     BrowserModule,
