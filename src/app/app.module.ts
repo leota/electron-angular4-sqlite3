@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material.module';
 import { AppRoutingModule } from './modules/app-routing.module';
 import { FormsModule }   from '@angular/forms';
@@ -21,7 +21,7 @@ import { CommunityDetailComponent } from './community-detail/community-detail.co
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
     FormsModule 
