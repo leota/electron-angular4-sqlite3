@@ -3,9 +3,32 @@
 @import 'variables';
 @import '../node_modules/font-awesome/scss/font-awesome';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* colors */
+.light-blue {
+    color: $light-blue;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
 
 body {
     margin: 0;
+}
+
+.container {
+    margin: 15px;
+    text-align: center;
+}
+
+.fixed-bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
 }
 
 .link {

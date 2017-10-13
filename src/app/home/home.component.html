@@ -1,0 +1,16 @@
+<div class="no-items" *ngIf="communitiesList && communitiesList.length == 0">
+  <p>Nessuna comunità trovata. Creane una dal pulsante in basso</p>
+</div>
+<div class="list">
+  <div class="community" *ngFor="let c of communitiesList">
+    <div class="picture">
+        <i class="fa fa-users fa-4x light-blue" aria-hidden="true"></i>
+    </div>
+    <p class="name light-blue">{{c.name}}</p>
+  </div>
+</div>
+<div class="fixed-bottom-right">
+  <button mat-fab routerLink="/create-community">
+    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+  </button>
+</div>

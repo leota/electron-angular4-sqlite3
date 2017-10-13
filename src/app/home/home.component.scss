@@ -1,0 +1,17 @@
+.no-items {
+    margin: 25px 0;
+}
+
+.list {
+    text-align: center;
+    .community {
+        display: inline-block;
+        width: 200px;
+        padding: 10px;
+        &:hover {
+            opacity: 0.8;
+        }
+        .picture {}
+        .name {}
+    }
+}

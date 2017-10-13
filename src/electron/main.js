@@ -14,7 +14,7 @@ let knex = require("knex")({
 
 function createWindow() {
   // Create the browser window.
-  mainWindow = new BrowserWindow({ width: 800, height: 600, show: false })
+  mainWindow = new BrowserWindow({ width: 1280, height: 720, show: false })
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
@@ -26,12 +26,12 @@ function createWindow() {
   mainWindow.once("ready-to-show", () => { mainWindow.show() })
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   ipcMain.on("mainWindowLoaded", function () {
-    let result = knex.select("FirstName").from("Users")
+    let result = knex.select("name").from("communities")
     result.then(function (rows) {
-      mainWindow.webContents.send("resultSent", rows);
+      mainWindow.webContents.send("CommunitiesListSent", rows);
     })
   });
 
