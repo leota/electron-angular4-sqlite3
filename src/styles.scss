@@ -5,11 +5,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-/* colors */
-.light-blue {
-    color: $light-blue;
-}
-
+/* overrides */
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -19,9 +15,38 @@ body {
     margin: 0;
 }
 
+/* colors */
+.light-blue {
+    color: $light-blue;
+}
+
+.gray {
+    color: $gray;
+}
+
+/* custom */
 .container {
     margin: 15px;
     text-align: center;
+}
+
+.form-wrap {
+    max-width: 650px;
+    margin: 25px auto;
+    .mat-form-field {
+        width: 100%;
+    }
+    button {
+        margin: 25px 0;
+    }
+}
+
+.back-btn {
+    cursor: pointer;
+    text-align: left;
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .fixed-bottom-right {

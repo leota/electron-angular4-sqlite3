@@ -44,6 +44,14 @@ function createWindow() {
   })
 }
 
+// Database functions
+ipcMain.on("createCommunity", function (evt, data) {
+  let result = knex("communities").insert(data);
+  result.then(function (rows) {
+    mainWindow.webContents.send("CommunitiesListSent", rows);
+  })
+});
+
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.

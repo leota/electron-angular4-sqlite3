@@ -1,3 +1,26 @@
-<p>
-  create-community works!
-</p>
+<div class="back-btn">
+    <i class="fa fa-chevron-left gray" aria-hidden="true" (click)="goBack()"></i>
+</div>
+<div class="form-wrap">
+  <form #communityForm="ngForm">
+    <mat-form-field>
+      <input matInput #name="ngModel" [(ngModel)]="community.name" placeholder="Nome Comunità" type="text" id="name" name="name"
+        required>
+      <mat-error *ngIf="name.invalid && (name.dirty || name.touched)">Campo obbligatorio</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput #country="ngModel" [(ngModel)]="community.country" placeholder="Nazione" type="text" id="country" name="country">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput #city="ngModel" [(ngModel)]="community.city" placeholder="Città" type="text" id="city" name="city">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput #address="ngModel" [(ngModel)]="community.address" placeholder="Indirizzo" type="text" id="address" name="address">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput #telephone="ngModel" [(ngModel)]="community.telephone" placeholder="Telefono" type="text" id="telephone"
+        name="telephone">
+    </mat-form-field>
+    <button mat-raised-button color="accent" [disabled]="!communityForm.form.valid" (click)="createCommunity()">Crea</button>
+  </form>
+</div>
