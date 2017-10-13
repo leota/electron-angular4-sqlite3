@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { CreateCommunityComponent } from './create-community/create-community.component';
+import { HomeComponent } from '../home/home.component';
+import { CreateCommunityComponent } from '../create-community/create-community.component';
+import { CommunityDetailComponent } from '../community-detail/community-detail.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'create-community', component: CreateCommunityComponent },
+    { path: 'community-detail:id', component: CommunityDetailComponent },
 ];
 
 @NgModule({
