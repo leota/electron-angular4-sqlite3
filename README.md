@@ -1,4 +1,4 @@
-# Community Manager
+# Electron Angular4 Sqlite3
 This is a sample project to show how to build a desktop app using Electron, Angular 4 and Sqlite3
 
 ## Info about branches
