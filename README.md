@@ -8,6 +8,9 @@ Show the essential configuration to build a desktop app with Electron, Angular a
 #### community (WIP)
 Will enable user to create communities/organizations, add people to them and manage their data.
 
+## Prerequisites
+Make sure you have `node-gyp` globally installed. If not, run `npm i -g node-gyp`
+
 ## Setup
 ```
 git clone git@github.com:leota/electron-angular4-sqlite3.git
